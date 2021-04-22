@@ -19,6 +19,15 @@ public class Table {
         }
 
         double average = sum / tableSize;
+
+        int max = table[0];
+        for (int i = 0; i < tableSize; i++) {
+            if (table[i] > max) {
+                max = table[i];
+            }
+        }
+
         System.out.println("Average value of the entered numbers is: " + average);
+        System.out.println("Maximum value of the entered numbers is: " + max);
     }
 }
