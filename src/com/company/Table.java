@@ -18,7 +18,7 @@ public class Table {
             sum += table[i];
         }
 
-        double average = sum / tableSize;
+        double average = (double) sum / tableSize;
 
         int max = table[0];
         for (int i = 0; i < tableSize; i++) {
