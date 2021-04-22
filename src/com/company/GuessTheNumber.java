@@ -7,7 +7,6 @@ public class GuessTheNumber {
 
     public static void main(String[] args) {
         int numberToGuess = new Random().nextInt(100);
-        System.out.println(numberToGuess);
 
         Scanner input = new Scanner(System.in);
         System.out.print("Hi! Enter a number between 0 and 99. Please enter your number: ");
