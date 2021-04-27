@@ -7,7 +7,16 @@ public class Table {
     public static void main (String[] args) {
         System.out.println("Please set the size of table");
         Scanner size = new Scanner(System.in);
-        int tableSize = size.nextInt();
+        int tableSize;
+
+        do {
+            while (!size.hasNextInt()) {
+                size.next();
+                System.out.println("This is not the integer number. Please try once again");
+            }
+            tableSize = size.nextInt();
+            System.out.println("You have to pass positive number, please try once again:");
+        } while (tableSize <= 0);
 
         int[] table = new int[tableSize];
         int sum = 0;
